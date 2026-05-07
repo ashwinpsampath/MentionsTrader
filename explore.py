@@ -3,9 +3,8 @@ import json
 
 def main():
     client = KalshiClient()
-    params = {"limit" : 5,
+    params = {"limit" : 2,
               "status": "open",
-              "with_nested_markets": True
              }
     data = client.get("/events",params)
     print(json.dumps(data,indent=2))
