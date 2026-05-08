@@ -1,0 +1,59 @@
+[cached] https://www.rev.com/transcripts/2026-state-of-the-union-address
+[cached] https://www.rev.com/transcripts/trump-rally-in-kentucky
+[cached] https://www.rev.com/transcripts/trump-rally-in-texas
+[cached] https://www.rev.com/transcripts/trump-event-in-florida
+[cached] https://www.rev.com/transcripts/trump-speaks-at-tpusa-event
+[cached] https://www.rev.com/transcripts/trump-speaks-at-un
+[cached] https://www.rev.com/transcripts/trump-at-navy-250th
+[cached] https://www.rev.com/transcripts/donald-trump-west-point-commencement-speech-transcript
+[cached] https://www.rev.com/transcripts/trumprx-announcement
+[cached] https://www.rev.com/transcripts/oval-office-ufc-announcement
+[cached] https://www.rev.com/transcripts/retirement-account-executive-order
+[cached] https://www.rev.com/transcripts/presidential-fitness-test-award
+[cached] https://www.rev.com/transcripts/tariff-ruling-response
+[cached] https://www.rev.com/transcripts/epa-changes
+[cached] https://www.rev.com/transcripts/60-minutes-trump-interview-on-whcd-shooting
+
+Corpus loaded: 15 speeches
+
+=== Per speech ===
+  2026-02-25  speech         Trump:  59,597 chars  others: 36  (2026 State Of The Union Address)
+  2026-03-12  rally          Trump:  42,441 chars  others: 18  (Trump Rally In Kentucky)
+  2026-03-01  rally          Trump:  43,704 chars  others: 16  (Trump Rally In Texas)
+  2026-05-04  rally          Trump:  69,359 chars  others: 3  (Trump Event In Florida)
+  2026-04-20  rally          Trump:  40,896 chars  others: 5  (Trump Speaks At Tpusa Event)
+  2025-09-23  speech         Trump:  46,390 chars  others: 1  (Trump Speaks At Un)
+  2025-10-13  speech         Trump:  36,937 chars  others: 4  (Trump At Navy 250Th)
+  2025-05-24  speech         Trump:  17,150 chars  others: 1  (Donald Trump West Point Commencement Speech Transc)
+  2026-02-08  announcement   Trump:  10,273 chars  others: 4  (Trumprx Announcement)
+  2026-05-07  announcement   Trump:  11,281 chars  others: 20  (Oval Office Ufc Announcement)
+  2026-05-03  announcement   Trump:  45,109 chars  others: 19  (Retirement Account Executive Order)
+  2026-05-06  ceremony       Trump:  37,772 chars  others: 29  (Presidential Fitness Test Award)
+  2026-02-22  announcement   Trump:  35,515 chars  others: 38  (Tariff Ruling Response)
+  2026-02-15  announcement   Trump:  20,093 chars  others: 15  (Epa Changes)
+  2026-04-27  interview      Trump:  31,065 chars  others: 2  (60 Minutes Trump Interview On Whcd Shooting)
+
+Total Trump speech text across corpus: 547,582 characters
+Approx. words (chars/5): 109,516
+
+=== All speakers across corpus ===
+  Trump: 528 turns
+  Norah O'Donnell: 79 turns
+  Audience: 37 turns
+  Speaker 5: 22 turns
+  Speaker 1: 21 turns
+  Speaker 4: 20 turns
+  Speaker 6: 19 turns
+  Attendees: 16 turns
+  Will Scharf: 15 turns
+  Speaker 2: 13 turns
+  Speaker 3: 13 turns
+  Speaker 7: 13 turns
+  Speaker 8: 13 turns
+  Justin: 13 turns
+  Speaker 14: 12 turns
+  Speaker 15: 12 turns
+  Speaker 18: 12 turns
+  Bryson DeChambeau: 12 turns
+  Gary Player: 12 turns
+  Speaker 9: 11 turns
