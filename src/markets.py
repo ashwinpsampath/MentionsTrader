@@ -25,7 +25,7 @@ class MentionMarket:
     
     # What we're actually trading on
     target_phrase: str           # from yes_sub_title — what word/phrase has to be said
-    event_title: str             # human-readable, e.g. "What will Lyft say during their next earnings call?"
+    event_title: str             # e.g. "What will Lyft say during their next earnings call?"
     
     # Pricing (cents, 0-100)
     yes_bid_cents: int
@@ -110,6 +110,21 @@ def parse_mention_market(market: dict) -> MentionMarket:
         rules_text=market["rules_primary"],
         status=market["status"],
     )
+
+def is_tradable(market: MentionMarket) -> bool:
+    """
+    Thresholds calibrated from May 2026 mention market distributions.
+    Reconsider after backtest data is available.
+    """
+    if market.volume_24h < 100:
+        return False
+    spread = market.yes_ask_cents - market.yes_bid_cents
+    if spread > 15:
+        return False
+    min_depth = min(market.yes_bid_size, market.yes_ask_size)
+    if min_depth < 3:
+        return False
+    return True
     
 
 def find_mention_markets(events: list[dict]) -> list[MentionMarket]:
@@ -117,5 +132,6 @@ def find_mention_markets(events: list[dict]) -> list[MentionMarket]:
     mention_markets = []
     for event in events:
         for market in event.get("markets",[]):
-            mention_markets.append(parse_mention_market(market))
+            if market["status"] == "active":
+                mention_markets.append(parse_mention_market(market))
     return mention_markets

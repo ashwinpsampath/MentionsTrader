@@ -11,4 +11,4 @@ wheels/
 *.pem
 .env
 .uv-cache/
-.cache/
+.cache/*
