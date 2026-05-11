@@ -12,6 +12,8 @@ import time
 import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
+from markdownify import markdownify
+
 
 
 CACHE_DIR = Path(".cache/html")
@@ -23,6 +25,15 @@ RATE_LIMIT_SECONDS = 2  # minimum delay between actual network fetches
 # Module-level state to track when we last hit the network.
 # Used to enforce the rate limit across multiple fetches in one session.
 _last_fetch_time: float = 0.0
+
+
+def html_to_markdown(html: str) -> str:
+    """Convert HTML to markdown, preserving bold/italic/headers.
+    
+    Used for transcript sources where speaker labels and section headers
+    are semantically meaningful (e.g. Motley Fool's **Name:** turns).
+    """
+    return markdownify(html, heading_style="ATX", bullets="-")
 
 
 def _url_to_cache_path(url: str) -> Path:
