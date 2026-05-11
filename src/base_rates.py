@@ -46,7 +46,6 @@ def _phrase_appears(phrase: str, text: str) -> bool:
 def compute_base_rate(
     phrase: str,
     corpus: list[Speech],
-    speaker: str = "Trump",
     smoothing_alpha: float = 1.0,
 ) -> BaseRate:
     """Compute the base rate for a phrase in the given corpus.
@@ -54,7 +53,6 @@ def compute_base_rate(
     Args:
         phrase: Target phrase. Case-insensitive. Plural/possessive variants ok.
         corpus: List of Speech objects to search.
-        speaker: Whose speech text to search. Defaults to "Trump".
         smoothing_alpha: Laplace smoothing strength. 1.0 is standard.
                          Larger values pull more toward 50% (more skeptical
                          of small-sample evidence).
@@ -65,7 +63,7 @@ def compute_base_rate(
     total = len(corpus)
     matched_titles = []
     for speech in corpus:
-        text = speech.text_by(speaker);
+        text = speech.text_by_company();
         if _phrase_appears(phrase, text):
             matched_titles.append(speech.title)
     

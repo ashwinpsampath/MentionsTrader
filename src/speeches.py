@@ -74,7 +74,7 @@ _PARTICIPANTS_HEADER = re.compile(
 _NEXT_SECTION_HEADER = re.compile(r"^##\s+\S", re.MULTILINE)
 
 # Matches a list item: "- Title — Name"
-_PARTICIPANT_LINE = re.compile(r"^-\s+.+?\s+\u2014\s+(.+?)\s*$", re.MULTILINE)
+_PARTICIPANT_LINE = re.compile(r"^-?\s*.+?\s+\u2014\s+(.+?)\s*$", re.MULTILINE)
 
 
 def parse_motley_fool_participants(text: str) -> list[str]:
